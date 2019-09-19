@@ -1,0 +1,71 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider-container {
+  display: flex;
+}
+
+.slider-container .image {
+  min-width: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.fas {
+  font-size: 30px;
+  position: absolute;
+  top: 0;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.fas:hover {
+  color: rgb(22, 22, 22);
+}
+
+.fa-chevron-left {
+  left: 0;
+}
+
+.fa-chevron-right {
+  right: 0;
+}
+
+.currentImage {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  bottom: 0;
+}
+
+.currentImage .current {
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: rgba(41, 41, 41, 0.8);
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+}

@@ -1,0 +1,33 @@
+.galery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+}
+
+.galery-container {
+  display: grid;
+  grid-template-areas:
+    "image-one image-two"
+    "image-one image-three";
+  grid-gap: 12px;
+  width: 100%;
+}
+
+.galery-container .image-box {
+  cursor: pointer;
+}
+
+.galery-container .image-box:nth-child(1) {
+  grid-area: image-one;
+}
+
+.galery-container .image-box:nth-child(2) {
+  grid-area: image-two;
+}
+
+.galery-container .image-box:nth-child(3) {
+  grid-area: image-three;
+}
